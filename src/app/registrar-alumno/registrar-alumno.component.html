@@ -1,0 +1,14 @@
+<!-- registro.component.html -->
+<div>
+    <label>Número de cuenta:</label>
+    <input [(ngModel)]="numeroDeCuenta" name="numeroDeCuenta">
+
+    <label>Grupo:</label>
+    <input [(ngModel)]="grupo" name="grupo" required>
+  
+    <label>Nombre:</label>
+    <input [(ngModel)]="nombre" name="nombre" required>
+  
+    <button (click)="enviarRegistro()" >Registrar</button>
+</div>
+    

@@ -1,0 +1,8 @@
+
+<!-- cuenta la cantidad de alumnos por grupo -->
+<div>
+    <h2>Contador de Alumnos por Grupo</h2>
+    <div *ngFor="let grupo of grupos">
+      Grupo {{ grupo }}: {{ contarAlumnosPorGrupo(grupo) }} alumnos
+    </div>
+</div>

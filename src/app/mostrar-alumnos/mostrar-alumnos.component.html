@@ -1,0 +1,17 @@
+<div>
+    <h2>Lista de Registros</h2>
+    <ul>
+      <li *ngFor="let registro of alumnos">
+      
+        <label>Número de cuenta:</label>
+        <input [(ngModel)]="registro.numeroDeCuenta" name="numeroDeCuenta" />
+        <input [(ngModel)]="registro.grupo" name="grupo" required />
+        <input [(ngModel)]="registro.nombre" name="nombre" required />
+
+        <button (click)="editar(registro)">Editar</button>
+
+          <button (click)="eliminar(registro.numeroDeCuenta)">Eliminar</button>
+          </li>
+      </ul>
+        
+</div>
